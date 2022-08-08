@@ -571,155 +571,116 @@
     
 
     
-
-    
-
-    
         <style>
-    .twikoo-card {
+    .waline-card {
         margin: 1.5rem auto;
     }
-
-    .twikoo-card .card-content {
-        padding: 20px;
+    .waline-card .card-content {
+        padding: 20px 20px 5px 20px;
     }
 
-    #tcomments textarea {
-        box-sizing: border-box;
-        background: url("/") 100% 100% no-repeat;
-    }
-
-    #tcomments p {
+    #waline p {
         margin: 2px 2px 10px;
         font-size: 1.05rem;
         line-height: 1.78rem;
     }
-
-    #tcomments blockquote p {
+    #waline blockquote p {
         text-indent: 0.2rem;
     }
-
-    #tcomments a {
+    #waline a {
         padding: 0 2px;
         color: #4cbf30;
         font-weight: 500;
         text-decoration: none;
     }
-
-    #tcomments img {
+    #waline img {
         max-width: 100%;
-        height: auto;
         cursor: pointer;
     }
-
-    #tcomments ol li {
+    #waline ol li {
         list-style-type: decimal;
     }
-
-    #tcomments ol,
+    #waline ol,
     ul {
         display: block;
         padding-left: 2em;
         word-spacing: 0.05rem;
     }
-
-    #tcomments ul li,
+    #waline ul li,
     ol li {
         display: list-item;
         line-height: 1.8rem;
         font-size: 1rem;
     }
-
-    #tcomments ul li {
+    #waline ul li {
         list-style-type: disc;
     }
-
-    #tcomments ul ul li {
+    #waline ul ul li {
         list-style-type: circle;
     }
-
-    #tcomments table,
-    th,
-    td {
+    #waline table, th, td {
         padding: 12px 13px;
         border: 1px solid #dfe2e5;
     }
-
-    #tcomments table,
-    th,
-    td {
+    #waline table, th, td {
         border: 0;
     }
-
-    table tr:nth-child(2n),
-    thead {
+    table tr:nth-child(2n), thead {
         background-color: #fafafa;
     }
-
-    #tcomments table th {
+    #waline table th {
         background-color: #f2f2f2;
         min-width: 80px;
     }
-
-    #tcomments table td {
+    #waline table td {
         min-width: 80px;
     }
-
-    #tcomments h1 {
+    #waline h1 {
         font-size: 1.85rem;
         font-weight: bold;
         line-height: 2.2rem;
     }
-
-    #tcomments h2 {
+    #waline h2 {
         font-size: 1.65rem;
         font-weight: bold;
         line-height: 1.9rem;
     }
-
-    #tcomments h3 {
+    #waline h3 {
         font-size: 1.45rem;
         font-weight: bold;
         line-height: 1.7rem;
     }
-
-    #tcomments h4 {
+    #waline h4 {
         font-size: 1.25rem;
         font-weight: bold;
         line-height: 1.5rem;
     }
-
-    #tcomments h5 {
+    #waline h5 {
         font-size: 1.1rem;
         font-weight: bold;
         line-height: 1.4rem;
     }
-
-    #tcomments h6 {
+    #waline h6 {
         font-size: 1rem;
         line-height: 1.3rem;
     }
-
-    #tcomments p {
+    #waline p {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
-    #tcomments hr {
+    #waline hr {
         margin: 12px 0;
         border: 0;
         border-top: 1px solid #ccc;
     }
-
-    #tcomments blockquote {
+    #waline blockquote {
         margin: 15px 0;
         border-left: 5px solid #42b983;
         padding: 1rem 0.8rem 0.3rem 0.8rem;
         color: #666;
         background-color: rgba(66, 185, 131, .1);
     }
-
-    #tcomments pre {
+    #waline pre {
         font-family: monospace, monospace;
         padding: 1.2em;
         margin: .5em 0;
@@ -728,8 +689,7 @@
         border-radius: 0.3em;
         tab-size: 4;
     }
-
-    #tcomments code {
+    #waline code {
         font-family: monospace, monospace;
         padding: 1px 3px;
         font-size: 0.92rem;
@@ -737,26 +697,21 @@
         background-color: #f8f8f8;
         border-radius: 2px;
     }
-
-    #tcomments pre code {
+    #waline pre code {
         font-family: monospace, monospace;
         padding: 0;
         color: #e8eaf6;
         background-color: #272822;
     }
-
-    #tcomments pre[class*="language-"] {
+    #waline pre[class*="language-"] {
         padding: 1.2em;
         margin: .5em 0;
     }
-
-    #tcomments code[class*="language-"],
+    #waline code[class*="language-"],
     pre[class*="language-"] {
         color: #e8eaf6;
     }
-
-    #tcomments [type="checkbox"]:not(:checked),
-    [type="checkbox"]:checked {
+    #waline [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
         position: inherit;
         margin-left: -1.3rem;
         margin-right: 0.4rem;
@@ -765,52 +720,38 @@
         left: unset;
         visibility: visible;
     }
-
-    #tcomments b,
+    #waline b,
     strong {
         font-weight: bold;
     }
-
-    #tcomments dfn {
+    #waline dfn {
         font-style: italic;
     }
-
-    #tcomments small {
+    #waline small {
         font-size: 85%;
     }
-
-    #tcomments cite {
+    #waline cite {
         font-style: normal;
     }
-
-    #tcomments mark {
+    #waline mark {
         background-color: #fcf8e3;
         padding: .2em;
     }
-
-    #tcomments table,
-    th,
-    td {
+    #waline table, th, td {
         padding: 12px 13px;
         border: 1px solid #dfe2e5;
     }
-
-    table tr:nth-child(2n),
-    thead {
+    table tr:nth-child(2n), thead {
         background-color: #fafafa;
     }
-
-    #tcomments table th {
+    #waline table th {
         background-color: #f2f2f2;
         min-width: 80px;
     }
-
-    #tcomments table td {
+    #waline table td {
         min-width: 80px;
     }
-
-    #tcomments [type="checkbox"]:not(:checked),
-    [type="checkbox"]:checked {
+    #waline [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
         position: inherit;
         margin-left: -1.3rem;
         margin-right: 0.4rem;
@@ -819,34 +760,30 @@
         left: unset;
         visibility: visible;
     }
-</style>
-
-<div class="card twikoo-card" data-aos="fade-up">
+  </style>
+  
+  <div class="card waline-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div class="card-content" style="display: grid">
-        <div id="tcomments"></div>
+    <div id="waline" class="card-content" style="display: grid">
     </div>
-</div>
+  </div>
+  
 
-<script src="/libs/twikoo/twikoo.all.min.js"></script>
-<script>
-    twikoo.init({
-        envId: 'https://twikoo-chat.vercel.app',
-        el: '#tcomments',
-        region: '',
-        path: ''
-    }).then(function () {
-        var tkInputs = document.querySelector('#twikoo').getElementsByTagName('input');
-        for (var tkInputsIndex = 0; tkInputsIndex < tkInputs.length; tkInputsIndex++) {
-            if (tkInputs[tkInputsIndex]) {
-                tkInputs[tkInputsIndex].classList.add('browser-default');
-            }
-        }
+  <!-- <script src="//cdn.jsdelivr.net/npm/@waline/client"></script> -->
+  <script src="/libs/waline/Waline.min.js"></script>
+  <script>
+    new Waline({
+        el: '#waline',
+        serverURL: 'https://waline-chat.vercel.app',
+        avatar: 'mm'    
     });
-</script>
+  </script> 
+    
+
+    
 
     
 
